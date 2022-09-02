@@ -50,7 +50,7 @@ export default class LifeCycleClassTugas extends React.Component{
 
     delKeranjang (produknya) {
         const keranjangNow = [...this.state.carts]
-        const index = keranjangNow.indexOf(produknya.target.value)
+        const index = keranjangNow.indexOf(produknya)
         
         if (index !== -1) {
             keranjangNow.splice(index,1)
